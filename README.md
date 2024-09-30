@@ -57,6 +57,10 @@ Initial pressure $p(t = 0) = 1000 psi$. The boundary conditions are the no-flow 
 
 In this problem I also use implicit time discretization by the finite difference method
 
+Solution of this equation:
+
+![My Image](Examples/task1.jpg)
+
 ## branch Task3: Numerical and analytical solution of the Buckley-Leverett equation in 1D area
 
 We will model the displacement of oil by water in a one-dimensional region by solving the equations to solve the Buckley-Leverett equation:
