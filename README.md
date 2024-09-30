@@ -36,6 +36,11 @@ Discretization of second derivatives by the finite difference method is implicit
 
 So we get a system of linear equations.
 
+My solution of this equation:
+
+![My Image](Examples/task1.jpg)
+
+
 ## branch Task2: Non-stationary 2D water pressure equation for the single-phase filtration model in a square area
 
 Water pressure equation:
@@ -56,10 +61,6 @@ The region contains one injection well at point $x = 5000 ft$, $y = 5000 ft$, fl
 Initial pressure $p(t = 0) = 1000 psi$. The boundary conditions are the no-flow Neumann condition  $\frac{\partial p}{\partial \boldsymbol{n}} = 0$ on all boundaries except the right one $(x = L)$, where the Dirichlet condition is set $p = 2000 psi$
 
 In this problem I also use implicit time discretization by the finite difference method
-
-Solution of this equation:
-
-![My Image](Examples/task1.jpg)
 
 ## branch Task3: Numerical and analytical solution of the Buckley-Leverett equation in 1D area
 
@@ -116,6 +117,11 @@ where $p_f$ - pressure in crack, $p_m$ - pressure in the area outside the crack
 Thus, we have a system of two differential equations with unknowns $p_m$ and $p_f$
 
 Boundry condition (BC) on the left boundary is $p(0, t) = 500$. BC on the right boundary – no leakage. Initial condition is $p(x, 0) = 1000$
+
+My solution of this equations on time interval [0s, 10s]:
+
+![hippo](Examples/Task4_Pf.gif)
+![hippo](Examples/Task4_Pm.gif)
 
 # Output of results
 The programs output results in <a href="https://www.paraview.org/" target="_blank">Paraview</a> (.vtk data files) and Excel (.csv data files) formats. The Paraview program is free and very quickly and easily installed in a couple of minutes. After installing paraview, select $File \to Open \to...$ to view the results.
