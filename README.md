@@ -62,6 +62,10 @@ Initial pressure $p(t = 0) = 1000 psi$. The boundary conditions are the no-flow 
 
 In this problem I also use implicit time discretization by the finite difference method
 
+The view of my numerical solution on the time interval [0, 10s]:
+
+![hippo](Examples/Task2.gif)
+
 ## branch Task3: Numerical and analytical solution of the Buckley-Leverett equation in 1D area
 
 We will model the displacement of oil by water in a one-dimensional region by solving the equations to solve the Buckley-Leverett equation:
@@ -95,6 +99,10 @@ $N_o = N_w = 2$
 
 $S_{wr} = 0.2, S_{or} = 0.15$
 
+The appearance of my numerical solution to this equation in time interval [0s, 1s]:
+
+![hippo](Examples/Task3.gif)
+
 I also found an $analytical$  $solution$ for this problem, using the results from the <a href="https://www.researchgate.net/publication/309014212_Analysis_of_the_Buckley-Leverett_Solution_and_Comparison_with_Numerical_Simulation?enrichId=rgreq-0f016f82784ef3d9ae202b3bd53d4e8a-XXX&enrichSource=Y292ZXJQYWdlOzMwOTAxNDIxMjtBUzo0MTYzNDg0OTM2MzE0ODlAMTQ3NjI3NjYyNDE1MA%3D%3D&el=1_x_3&_esc=publicationCoverPdf" target="_blank">article</a>, which provides the dependence of the coordinates $x_D$ of a point with a fixed saturation $S_{wD}$:
 
 <h2 align="center">$x_D = t_D \frac{d f_w}{d S_w} | _ {S_{wD}}  (*)$, $where$ $t_D$ = $\frac{q t}{\phi A}$
@@ -104,6 +112,10 @@ Obviously, the analytical solution for $S_w$ will look like this:
 $S_w$ from (*) (we iterate over the values $S_w$ $\in$ $[1.0, S_{wf}]$), when $x <= x_f$ and $S_w = S_{wr}$, when $x > x_f$, where $x_f$ is wave front coorinate
 
 To find $x_f$,I solved the equation $\frac{d f_w}{d S_w} | _ {S_{wf}}$ = $\frac{f_w (S_{wf})}{S_{wf} - S_{wr}}$ to find $S_{wf}$ - saturation of water on top of wave front and substitute it in (*)
+
+This is what the comparison of the analytical and quantitative solutions I obtained looks like:
+
+![My Image](Examples/Task3.jpg)
 
 ## branch Task4: Single-phase flow in a 1D fractured porous formation
 There is a crack running along the entire area. Single-phase flow in a fractured medium is described using the dual porosity/permeability model:
