@@ -1,4 +1,4 @@
 ﻿
-add_executable (Task6 "Task6.cpp")
+add_executable (Task7 "Task7.cpp")
 
-target_link_libraries (Task6 BiCGStab)
+target_link_libraries (Task7 BiCGStab)
