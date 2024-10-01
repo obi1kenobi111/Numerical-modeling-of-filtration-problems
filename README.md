@@ -5,6 +5,8 @@ All differential equations below are solved on uniform rectangular grids by the 
 To solve the obtained asymmetric matrices I use the <a href="https://en.wikipedia.org/wiki/Biconjugate_gradient_stabilized_method" target="_blank">BiCGStab</a> method with the preconditioner <a href="https://en.wikipedia.org/wiki/Incomplete_LU_factorization" target="_blank">ILU</a>. The implementation of this matrix solving method and others can be found at 
 <a href="https://github.com/kirill-terekhov/mipt-solvers?ysclid=m1p91idvpq689260986" target="_blank">Solvers</a> 
 
+The resulting matrices are very sparse, so for storing and processing them I use a format for storing only non-zero values
+
 P.S: This repository contains my solutions to problems in the course "Numerical Methods in Oil and Gas Engineering" at Sirius University.
 
 Examples of implict finite differences I used for linearization of differential equations:
